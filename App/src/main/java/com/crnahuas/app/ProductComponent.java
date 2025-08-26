@@ -1,7 +1,7 @@
 package com.crnahuas.app;
 
 /**
- * Implementación concreta de Component: representa el producto base sin descuentos.
+ * Producto concreto (sin descuentos). Implementa Component.
  */
 public class ProductComponent implements Component {
 
@@ -10,8 +10,8 @@ public class ProductComponent implements Component {
     private final double precioBase;
 
     /**
-     * @param nombre nombre del producto (no nulo/ vacío)
-     * @param categoria categoría (no nula/ vacía)
+     * @param nombre nombre del producto (no vacío)
+     * @param categoria categoría del producto (no vacía)
      * @param precioBase precio base (>= 0)
      */
     public ProductComponent(String nombre, String categoria, double precioBase) {

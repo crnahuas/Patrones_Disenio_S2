@@ -1,13 +1,13 @@
 package com.crnahuas.app;
 
 /**
- * Componente básico que expone el precio "actual" del producto. Los decoradores
- * envolverán este componente para modificar su precio.
+ * Componente base del patrón Decorator. Expone la API mínima que verán tanto el
+ * producto base como los decoradores.
  */
 public interface Component {
 
     /**
-     * @return nombre del producto
+     * @return nombre del producto (para mostrar y buscar)
      */
     String getNombre();
 
@@ -17,7 +17,7 @@ public interface Component {
     String getCategoria();
 
     /**
-     * @return precio actual (con o sin decoradores aplicados)
+     * @return precio "actual" del componente (base o decorado)
      */
     double getPrecio();
 }
